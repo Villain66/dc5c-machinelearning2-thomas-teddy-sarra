@@ -1,0 +1,74 @@
+﻿Superficie(m²),Nombre de chambres,Année de construction,Type de chauffage,Type de climatisation,Isolation,Orientation,Consommation énergétique(kWh)
+120,3,2005,Gaz,Split,Bonne,Sud,1800
+150,4,2010,Électrique,Split,Bonne,Est,2000
+200,5,2015,Gaz,Split,Très bonne,Sud,2500
+100,2,1990,Électrique,Aucune,Moyenne,Nord,1500
+80,1,1985,Fioul,Fenêtre simple,Faible,Ouest,1200
+140,3,2000,Gaz,Split,Bonne,Nord,1900
+110,2,1995,Électrique,Fenêtre simple,Moyenne,Sud,1600
+90,1,1980,Fioul,Aucune,Faible,Est,1300
+130,3,2008,Gaz,Split,Bonne,Ouest,1850
+180,4,2012,Électrique,Split,Bonne,Sud,2200
+160,3,2010,Gaz,Split,Bonne,Nord,2050
+95,2,1992,Électrique,Aucune,Moyenne,Ouest,1550
+125,3,2003,Gaz,Split,Bonne,Sud,1950
+170,4,2014,Électrique,Split,Bonne,Est,2300
+115,2,1998,Gaz,Fenêtre simple,Moyenne,Nord,1700
+105,2,1995,Électrique,Fenêtre simple,Moyenne,Sud,1650
+135,3,2007,Gaz,Split,Bonne,Ouest,2000
+85,1,1982,Fioul,Aucune,Faible,Est,1250
+145,3,2005,Électrique,Split,Bonne,Sud,2100
+155,4,2011,Gaz,Split,Bonne,Nord,2150
+195,5,2017,Gaz,Split,Très bonne,Sud,2600
+165,4,2013,Électrique,Split,Bonne,Est,2400
+175,4,2016,Gaz,Split,Bonne,Ouest,2550
+145,3,2006,Gaz,Split,Bonne,Sud,2100
+185,5,2018,Électrique,Split,Bonne,Nord,2450
+90,1,1981,Fioul,Aucune,Faible,Ouest,1300
+120,2,1994,Électrique,Aucune,Moyenne,Sud,1800
+110,2,1997,Gaz,Fenêtre simple,Moyenne,Nord,1700
+135,3,2009,Électrique,Split,Bonne,Est,1950
+105,2,1996,Gaz,Fenêtre simple,Moyenne,Sud,1650
+140,3,2001,Électrique,Split,Bonne,Nord,1900
+100,2,1991,Gaz,Split,Bonne,Sud,1750
+130,3,2004,Électrique,Split,Bonne,Ouest,2000
+160,4,2011,Gaz,Split,Bonne,Est,2300
+190,5,2016,Électrique,Split,Bonne,Nord,2600
+170,4,2013,Gaz,Split,Bonne,Sud,2350
+175,5,2017,Gaz,Split,Très bonne,Ouest,2550
+155,4,2010,Électrique,Split,Bonne,Nord,2150
+115,2,1999,Gaz,Fenêtre simple,Moyenne,Sud,1750
+105,1,1983,Fioul,Aucune,Faible,Est,1400
+125,2,1993,Gaz,Split,Bonne,Nord,1850
+145,3,2002,Électrique,Split,Bonne,Sud,2050
+135,3,2008,Gaz,Split,Bonne,Est,1950
+155,4,2011,Électrique,Split,Bonne,Ouest,2200
+165,4,2014,Gaz,Split,Bonne,Nord,2250
+180,5,2015,Électrique,Split,Bonne,Sud,2500
+195,5,2017,Gaz,Split,Très bonne,Est,2650
+175,4,2012,Électrique,Split,Bonne,Sud,2350
+160,4,2010,Gaz,Split,Bonne,Nord,2250
+185,5,2018,Gaz,Split,Bonne,Ouest,2500
+165,4,2013,Électrique,Split,Bonne,Sud,2300
+150,3,2006,Gaz,Split,Bonne,Nord,2100
+170,4,2012,Électrique,Split,Bonne,Sud,2350
+155,3,2009,Gaz,Split,Bonne,Ouest,2150
+125,2,1995,Électrique,Fenêtre simple,Moyenne,Sud,1650
+135,3,2007,Gaz,Split,Bonne,Est,1950
+145,3,2005,Électrique,Split,Bonne,Nord,2100
+115,2,1998,Gaz,Fenêtre simple,Moyenne,Sud,1700
+105,1,1982,Fioul,Aucune,Faible,Est,1400
+125,2,1993,Gaz,Split,Bonne,Nord,1850
+145,3,2002,Électrique,Split,Bonne,Sud,2050
+135,3,2008,Gaz,Split,Bonne,Est,1950
+155,4,2011,Électrique,Split,Bonne,Ouest,2200
+165,4,2014,Gaz,Split,Bonne,Nord,2250
+180,5,2015,Électrique,Split,Bonne,Sud,2500
+195,5,2017,Gaz,Split,Très bonne,Est,2650
+175,4,2012,Électrique,Split,Bonne,Sud,2350
+160,4,2010,Gaz,Split,Bonne,Nord,2250
+185,5,2018,Gaz,Split,Bonne,Ouest,2500
+165,4,2013,Électrique,Split,Bonne,Sud,2300
+150,3,2006,Gaz,Split,Bonne,Nord,2100
+170,4,2012,Électrique,Split,Bonne,Sud,2350
+155,3,2009,Gaz,Split,Bonne,Ouest,2150
