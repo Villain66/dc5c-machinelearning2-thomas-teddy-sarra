@@ -29,6 +29,25 @@ y_pred = model.predict(X_validation)
 r2 = r2_score(y_validation, y_pred)
 print("Coefficient de détermination (R²) :", r2)
 
+# Obtenir les coefficients de régression
+coefficients = model.coef_
+
+# Associer les coefficients aux variables correspondantes
+variable_coefficients = pd.DataFrame({'Variable': X.columns, 'Coefficient': coefficients})
+
+# Trier les coefficients par valeur absolue pour mettre en évidence les plus importants
+variable_coefficients = variable_coefficients.reindex(variable_coefficients['Coefficient'].abs().sort_values(ascending=False).index)
+
+# Afficher les coefficients
+print(variable_coefficients)
+
+# Visualisation des coefficients
+plt.figure(figsize=(10, 6))
+plt.barh(variable_coefficients['Variable'], variable_coefficients['Coefficient'])
+plt.xlabel('Coefficient de régression')
+plt.title('Importance des variables dans la prédiction de la consommation énergétique')
+plt.show()
+
 # Créer le scatter plot
 plt.figure(figsize=(8, 6))
 plt.scatter(y_validation, y_pred, color='blue', label='Prédictions')
