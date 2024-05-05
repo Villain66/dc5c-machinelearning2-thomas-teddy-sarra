@@ -1,8 +1,9 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import Ridge
-from sklearn.metrics import mean_squared_error
+from sklearn.linear_model import LinearRegression
 from math import sqrt
+import matplotlib.pyplot as plt
+from sklearn.metrics import r2_score
 
 # Charger le jeu de données
 data = pd.read_csv("C:/Users/tvill/Documents/Clone/dc5c-machinelearning2-thomas-teddy-sarra/Datas.csv")
@@ -14,16 +15,27 @@ data_encoded = pd.get_dummies(data)
 X = data_encoded.drop("Consommation énergétique(kWh)", axis=1)
 y = data_encoded["Consommation énergétique(kWh)"]
 
-# Diviser les données en ensemble d'entraînement et de test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=46)
+# Diviser les données en ensemble d'entraînement et de validation/test
+X_train, X_validation, y_train, y_validation = train_test_split(X, y, test_size=0.5, random_state=44)
 
-# Initialiser et entraîner le modèle de régression Ridge avec les meilleurs hyperparamètres
-best_ridge_model = Ridge(alpha=10)
-best_ridge_model.fit(X_train, y_train)
+# Initialiser et entraîner le modèle de régression linéaire
+model = LinearRegression()
+model.fit(X_train, y_train)
 
-# Faire des prédictions sur l'ensemble de test
-y_pred = best_ridge_model.predict(X_test)
+# Faire des prédictions sur l'ensemble de validation/test
+y_pred = model.predict(X_validation)
 
-# Calculer l'erreur quadratique moyenne (RMSE)
-rmse = sqrt(mean_squared_error(y_test, y_pred))
-print("RMSE:", rmse)
+# Calculer le coefficient de détermination (R²)
+r2 = r2_score(y_validation, y_pred)
+print("Coefficient de détermination (R²) :", r2)
+
+# Créer le scatter plot
+plt.figure(figsize=(8, 6))
+plt.scatter(y_validation, y_pred, color='blue', label='Prédictions')
+plt.plot([min(y_validation), max(y_validation)], [min(y_validation), max(y_validation)], color='red', linestyle='--', label='Réel')
+plt.title('Comparaison entre les valeurs prédites et réelles')
+plt.xlabel('Valeurs réelles')
+plt.ylabel('Valeurs prédites')
+plt.legend()
+plt.grid(True)
+plt.show()
